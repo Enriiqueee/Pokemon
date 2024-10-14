@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/pokemonFragment">
+
+    <fragment
+        android:id="@+id/pokemonFragment"
+        android:name="edu.iesam.pokemon.feature.presentation.PokemonFragment"
+        tools:layout="@layout/fragment_pokemon">
+        <action
+            android:id="@+id/action_pokemonFragment_to_pokemonDetailFragment"
+            app:destination="@id/pokemonDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pokemonDetailFragment"
+        android:name="edu.iesam.pokemon.feature.presentation.PokemonDetailFragment"
+        tools:layout="@layout/fragment_pokemon_detail" />
+
+    <argument
+        android:name="pokemonId"
+        app:argType="string" />
+
+    <action
+        android:id="@+id/action_pokemonFragment_to_pokemonDetailFragment"
+        app:destination="@id/pokemonFragment" />
+
+</navigation>
