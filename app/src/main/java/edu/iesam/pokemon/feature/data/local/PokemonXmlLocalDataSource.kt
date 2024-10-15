@@ -37,15 +37,18 @@ class PokemonXmlLocalDataSource(private val context: Context) {
         }
     }
 
-        fun findAll(): List<Pokemon>{
-            val pokemons = ArrayList<Pokemon>()
-            val mapPokemons = sharedPref.all
-            mapPokemons.forEach{ jsonPokemon ->
-                val pokemon = gson.fromJson(jsonPokemon as String, Pokemon::class.java)
+    fun findAll(): List<Pokemon> {
+        val pokemons = ArrayList<Pokemon>()
+        val mapPokemons = sharedPref.all
+        mapPokemons.values.forEach { jsonPokemon ->
+            if (jsonPokemon is String) {
+                val pokemon = gson.fromJson(jsonPokemon, Pokemon::class.java)
                 pokemons.add(pokemon)
             }
-            return pokemons
         }
+        return pokemons
+    }
+
 
 
     fun deleteById(pokemonId: String) {

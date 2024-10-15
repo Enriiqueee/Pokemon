@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import edu.iesam.pokemon.app.domain.ErrorApp
+import edu.iesam.pokemon.app.extension.loadUrl
 import edu.iesam.pokemon.databinding.FragmentPokemonDetailBinding
 import edu.iesam.pokemon.feature.domain.Pokemon
 
@@ -55,7 +56,8 @@ class PokemonDetailFragment: Fragment() {
     }
 
     fun bindData(pokemon: Pokemon) {
-        //binding.imageUrl.loadUrl(superHero.urlImage)
+        binding.pokemonImageView.loadUrl(pokemon.url)
+        binding.pokemonNameTextView.text = pokemon.name
     }
 
     private fun showError(error: ErrorApp) {
