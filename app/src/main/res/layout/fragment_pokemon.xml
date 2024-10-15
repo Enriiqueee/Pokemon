@@ -4,14 +4,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:background="#F5F5F5"
     tools:context=".feature.presentation.PokemonActivity">
 
     <LinearLayout
         android:id="@+id/pokemon_1"
         android:layout_margin="16dp"
-        android:layout_width="300dp"
+        android:layout_width="100dp"
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:background="#FFFFFF"
@@ -27,20 +27,13 @@
             android:textSize="16sp"
             />
 
-        <TextView
-            android:id="@+id/pokemon_name_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/pokemon_2"
         android:layout_margin="16dp"
-        android:layout_width="300dp"
+        android:layout_width="100dp"
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:background="#FFFFFF"
@@ -56,20 +49,13 @@
             android:textSize="16sp"
             />
 
-        <TextView
-            android:id="@+id/pokemon_name_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/pokemon_3"
         android:layout_margin="16dp"
-        android:layout_width="300dp"
+        android:layout_width="100dp"
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:background="#FFFFFF"
@@ -85,13 +71,5 @@
             android:textSize="16sp"
             />
 
-        <TextView
-            android:id="@+id/pokemon_name_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:textColor="#000000"
-            android:textSize="18sp"
-            />
     </LinearLayout>
 </LinearLayout>
