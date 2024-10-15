@@ -1,7 +1,7 @@
 package edu.iesam.pokemon.feature.domain
 
 class GetPokemonsUseCase(private val pokemonRepository: PokemonRepository) {
-    fun execute(): List<Pokemon> {
+    operator fun invoke(): List<Pokemon> {
         return pokemonRepository.getAllPokemon()
     }
 }
