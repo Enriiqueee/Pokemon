@@ -1,75 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="#F5F5F5"
-    tools:context=".feature.presentation.PokemonActivity">
+    android:background="#FAFAFA"
+    android:padding="16dp"
+    android:gravity="center">
 
     <LinearLayout
         android:id="@+id/pokemon_1"
-        android:layout_margin="16dp"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:padding="12dp"
+        android:layout_margin="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/pokemon_card_background"
+        android:padding="16dp"
         android:gravity="center"
-        android:elevation="4dp">
+        android:elevation="8dp"
+        android:layout_weight="1">
+
+
 
         <TextView
             android:id="@+id/pokemon_id_1"
+            android:text="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="16sp"
-            />
-
-
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingTop="8dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/pokemon_2"
-        android:layout_margin="16dp"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:padding="12dp"
+        android:layout_margin="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/pokemon_card_background"
+        android:padding="16dp"
         android:gravity="center"
-        android:elevation="4dp">
+        android:elevation="8dp"
+        android:layout_weight="1">
+
 
         <TextView
             android:id="@+id/pokemon_id_2"
+            android:text="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="16sp"
-            />
-
-
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingTop="8dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/pokemon_3"
-        android:layout_margin="16dp"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:padding="12dp"
+        android:layout_margin="8dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/pokemon_card_background"
+        android:padding="16dp"
         android:gravity="center"
-        android:elevation="4dp">
+        android:elevation="8dp"
+        android:layout_weight="1">
 
         <TextView
             android:id="@+id/pokemon_id_3"
+            android:text="3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="16sp"
-            />
-
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingTop="8dp" />
     </LinearLayout>
+
 </LinearLayout>
+

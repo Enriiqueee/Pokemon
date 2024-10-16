@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/pokemonImageView"
-        android:layout_width="118dp"
-        android:layout_height="100dp"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
         tools:src="@tools:sample/avatars"
         android:layout_marginTop="16dp" />
 
@@ -22,7 +22,8 @@
         android:layout_marginTop="16dp"
         android:layout_toRightOf="@id/pokemonImageView"
         android:text="@string/pokemon_name"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/pokemon_card_background"
         android:textSize="20sp" />
 
     <TextView
@@ -33,7 +34,8 @@
         android:layout_toRightOf="@id/pokemonImageView"
         android:layout_below="@id/pokemonNameTextView"
         android:text="@string/pokemon_type"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/pokemon_card_background"
         android:textSize="20sp" />
 
     <TextView
@@ -44,7 +46,8 @@
         android:layout_toRightOf="@id/pokemonImageView"
         android:layout_below="@id/pokemonType"
         android:text="@string/pokemon_hp"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/pokemon_card_background"
         android:textSize="20sp" />
 
 
