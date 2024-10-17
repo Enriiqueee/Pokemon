@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Pokemon</string>
     <string name="name_file_xml">pokemon</string>
+
+    <string name="pokemon_id">ID:</string>
+    <string name="pokemon_name">Nombre del Pokémon</string>
+    <string name="pokemon_type">Tipo:</string>
+    <string name="pokemon_hp">HP: </string>
 </resources>

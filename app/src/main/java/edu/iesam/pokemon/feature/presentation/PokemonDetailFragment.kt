@@ -57,7 +57,10 @@ class PokemonDetailFragment: Fragment() {
 
     fun bindData(pokemon: Pokemon) {
         binding.pokemonImageView.loadUrl(pokemon.url)
+        Log.d("@dev", "Url mostrada: ${pokemon.url}")
         binding.pokemonNameTextView.text = pokemon.name
+        binding.pokemonType.text = pokemon.type
+        binding.pokemonHp.text = pokemon.hp.toString()
     }
 
     private fun showError(error: ErrorApp) {

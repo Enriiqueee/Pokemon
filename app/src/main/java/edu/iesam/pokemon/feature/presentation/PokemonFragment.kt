@@ -59,20 +59,17 @@ class PokemonFragment : Fragment() {
     private fun bindData(pokemon: List<Pokemon>) {
         binding.apply {
             pokemonId1.text = pokemon[0].id
-            pokemonName1.text = pokemon[0].name
-            pokemonName1.setOnClickListener {
+            pokemonId1.setOnClickListener {
                 navigateToPokemonDetail(pokemon[0].id)
             }
 
             pokemonId2.text = pokemon[1].id
-            pokemonName2.text = pokemon[1].name
-            pokemonName2.setOnClickListener {
+            pokemonId2.setOnClickListener {
                 navigateToPokemonDetail(pokemon[1].id)
             }
 
             pokemonId3.text = pokemon[2].id
-            pokemonName3.text = pokemon[2].name
-            pokemonName3.setOnClickListener {
+            pokemonId3.setOnClickListener {
                 navigateToPokemonDetail(pokemon[2].id)
             }
         }
