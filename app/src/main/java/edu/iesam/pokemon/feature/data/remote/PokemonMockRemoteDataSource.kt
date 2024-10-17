@@ -10,6 +10,9 @@ class PokemonMockRemoteDataSource {
         Pokemon("4", "Charmander", "Fire", 39, "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png"),
         Pokemon("5", "Charmeleon", "Fire", 58, "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/005.png"),
         Pokemon("6", "Charizard", "Fire/Flying", 78, "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/006.png"),
+        Pokemon("7", "Squirtle", "Water", 44, "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/007.png"),
+        Pokemon("8", "Wartortle", "Water", 59, "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/008.png"),
+        Pokemon("9", "Blastoise", "Water", 79, "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/009.png")
     )
 
 
