@@ -16,6 +16,7 @@ glide = "4.16.0"
 coil = "2.7.0"
 viewModelScope="2.8.6"
 navigationComponent = "2.8.2"
+recyclerview = "1.3.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,6 +36,7 @@ nav-fragment = {group ="androidx.navigation", name = "navigation-fragment", vers
 nav-fragment-ktx = {group ="androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationComponent"}
 glide = {group ="com.github.bumptech.glide", name = "glide", version.ref = "glide"}
 coil = {group ="io.coil-kt", name = "coil", version.ref = "coil"}
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
 
 
 [plugins]

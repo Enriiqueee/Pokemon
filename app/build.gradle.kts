@@ -55,6 +55,7 @@ dependencies {
     implementation(libs.viewmodel.scope)
     implementation(libs.nav.ui)
     implementation(libs.nav.fragment)
+    implementation(libs.androidx.recyclerview)
     api(libs.nav.fragment.ktx)
 
     testImplementation(libs.junit)

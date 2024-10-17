@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import edu.iesam.pokemon.app.domain.ErrorApp
-import edu.iesam.pokemon.app.extension.loadUrl
+import edu.iesam.pokemon.app.extensions.loadUrl
 import edu.iesam.pokemon.databinding.FragmentPokemonDetailBinding
 import edu.iesam.pokemon.feature.domain.Pokemon
 
