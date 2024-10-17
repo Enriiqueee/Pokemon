@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import edu.iesam.pokemon.app.domain.ErrorApp
-import edu.iesam.pokemon.app.extension.loadUrl
+import edu.iesam.pokemon.app.extensions.loadUrl
 import edu.iesam.pokemon.databinding.FragmentPokemonDetailBinding
 import edu.iesam.pokemon.feature.domain.Pokemon
 
@@ -39,6 +39,7 @@ class PokemonDetailFragment: Fragment() {
         viewModel = pokemonFactory.buildDetailViewModel()
         setupObserver()
         getPokemonId()?.let { viewModel.viewCreated(it) }
+        pokemonArgs.pokemonId
     }
 
     private fun setupObserver() {
@@ -57,7 +58,6 @@ class PokemonDetailFragment: Fragment() {
 
     fun bindData(pokemon: Pokemon) {
         binding.pokemonImageView.loadUrl(pokemon.url)
-        Log.d("@dev", "Url mostrada: ${pokemon.url}")
         binding.pokemonNameTextView.text = pokemon.name
         binding.pokemonType.text = pokemon.type
         binding.pokemonHp.text = pokemon.hp.toString()

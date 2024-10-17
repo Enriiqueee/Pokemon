@@ -1,4 +1,4 @@
-package edu.iesam.pokemon.app.extension
+package edu.iesam.pokemon.app.extensions
 
 import android.widget.ImageView
 import coil.load
