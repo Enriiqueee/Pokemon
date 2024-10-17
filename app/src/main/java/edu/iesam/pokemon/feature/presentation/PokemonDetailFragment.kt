@@ -39,6 +39,7 @@ class PokemonDetailFragment: Fragment() {
         viewModel = pokemonFactory.buildDetailViewModel()
         setupObserver()
         getPokemonId()?.let { viewModel.viewCreated(it) }
+        pokemonArgs.pokemonId
     }
 
     private fun setupObserver() {
@@ -57,7 +58,6 @@ class PokemonDetailFragment: Fragment() {
 
     fun bindData(pokemon: Pokemon) {
         binding.pokemonImageView.loadUrl(pokemon.url)
-        Log.d("@dev", "Url mostrada: ${pokemon.url}")
         binding.pokemonNameTextView.text = pokemon.name
         binding.pokemonType.text = pokemon.type
         binding.pokemonHp.text = pokemon.hp.toString()
