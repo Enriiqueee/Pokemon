@@ -1,7 +1,7 @@
 package edu.iesam.pokemon.feature.data.remote
 
-import edu.iesam.pokemon.feature.domain.Pokemon
 import edu.iesam.pokemon.feature.domain.PokemonResponse
+import edu.iesam.pokemon.feature.domain.Pokemon
 import retrofit2.http.GET
 import retrofit2.Response
 import retrofit2.http.Path
