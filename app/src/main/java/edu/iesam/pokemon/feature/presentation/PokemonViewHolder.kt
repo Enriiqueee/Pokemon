@@ -17,14 +17,14 @@ class PokemonViewHolder(val view : View) : RecyclerView.ViewHolder(view){
             id.text = model.id
             name.text = model.name
             pokemonViewLayout.setOnClickListener {
-                navigateToPokemonDetail(model.id)
+                navigateToPokemonDetail(model.name)
             }
         }
     }
 
-    private fun navigateToPokemonDetail(pokemonId: String) {
+    private fun navigateToPokemonDetail(pokemonName: String) {
         findNavController(view).navigate(
-            PokemonFragmentDirections.actionPokemonFragmentToPokemonDetailFragment(pokemonId)
+            PokemonFragmentDirections.actionPokemonFragmentToPokemonDetailFragment(pokemonName)
         )
     }
 

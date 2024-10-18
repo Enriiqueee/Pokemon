@@ -57,6 +57,8 @@ dependencies {
     implementation(libs.nav.fragment)
     implementation(libs.androidx.recyclerview)
     api(libs.nav.fragment.ktx)
+    implementation(libs.retrofit)
+    implementation(libs.retrofitConverterGson)
 
     testImplementation(libs.junit)
 

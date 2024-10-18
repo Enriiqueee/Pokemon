@@ -20,7 +20,7 @@
         tools:layout="@layout/fragment_pokemon_detail">
 
         <argument
-            android:name="pokemonId"
+            android:name="pokemonName"
             app:argType="string"
             app:nullable="false"/>
     </fragment>

@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import edu.iesam.pokemon.app.domain.ErrorApp
+import edu.iesam.pokemon.app.data.api.ApiClient
 import edu.iesam.pokemon.feature.domain.GetPokemonsUseCase
 import edu.iesam.pokemon.feature.domain.Pokemon
 import kotlinx.coroutines.Dispatchers
@@ -25,6 +26,7 @@ class PokemonViewModel(
            _uiState.postValue(UiState(pokemon = pokemons))
         }
     }
+
 
     data class UiState(
         val isLoading: Boolean = false,

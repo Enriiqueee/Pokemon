@@ -15,4 +15,5 @@ fun ImageView.loadUrl(url: String) {
 
 fun ImageView.loadUrl(url: String) {
     this.load(url)
+
 }

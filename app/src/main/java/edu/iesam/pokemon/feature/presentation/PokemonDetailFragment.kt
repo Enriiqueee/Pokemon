@@ -38,8 +38,8 @@ class PokemonDetailFragment: Fragment() {
         pokemonFactory = PokemonFactory(requireContext())
         viewModel = pokemonFactory.buildDetailViewModel()
         setupObserver()
-        getPokemonId()?.let { viewModel.viewCreated(it) }
-        pokemonArgs.pokemonId
+        getPokemonName()?.let { viewModel.viewCreated(it) }
+        pokemonArgs.pokemonName
     }
 
     private fun setupObserver() {
@@ -72,8 +72,8 @@ class PokemonDetailFragment: Fragment() {
         }
     }
 
-    private fun getPokemonId(): String?{
-       return pokemonArgs.pokemonId
+    private fun getPokemonName(): String?{
+       return pokemonArgs.pokemonName
     }
 
 
