@@ -14,7 +14,7 @@ class PokemonXmlLocalDataSource(private val context: Context) {
 
     fun save(pokemon: Pokemon) {
         val editor = sharedPref.edit()
-        editor.putString(pokemon.name, gson.toJson(pokemon))
+        editor.putString(pokemon.id, gson.toJson(pokemon))
         editor.apply()
     }
 
@@ -27,7 +27,7 @@ class PokemonXmlLocalDataSource(private val context: Context) {
     fun saveAll(pokemons: List<Pokemon>) {
         val editor = sharedPref.edit()
         pokemons.forEach {
-            editor.putString(it.name, gson.toJson(it))
+            editor.putString(it.id, gson.toJson(it))
         }
         editor.apply()
     }
@@ -45,7 +45,7 @@ class PokemonXmlLocalDataSource(private val context: Context) {
             val pokemon = gson.fromJson(jsonPokemon.value as String, Pokemon::class.java)
             pokemons.add(pokemon)
         }
-        return pokemons
+        return pokemons.sortedBy { it.id.toInt() }
     }
 
     fun deleteById(id: String) {

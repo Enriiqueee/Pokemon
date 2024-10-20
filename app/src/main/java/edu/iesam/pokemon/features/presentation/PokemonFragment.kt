@@ -29,7 +29,6 @@ class PokemonFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         pokemonFactory = PokemonFactory(requireContext())
         viewModel = pokemonFactory.buildViewModel()
-        setupRecyclerView()
         setupObserver()
         viewModel.viewCreated()
     }
@@ -40,6 +39,7 @@ class PokemonFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentPokemonBinding.inflate(inflater, container, false)
+        setupRecyclerView()
         return binding.root
     }
 
