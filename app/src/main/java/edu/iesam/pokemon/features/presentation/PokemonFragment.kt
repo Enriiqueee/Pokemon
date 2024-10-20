@@ -82,12 +82,6 @@ class PokemonFragment : Fragment() {
         }
     }
 
-    private fun navigateToPokemonDetail(pokemonId: String) {
-        findNavController().navigate(
-            PokemonFragmentDirections.actionFragmentPokemonToFragmentPokemonDetail(pokemonId)
-        )
-    }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

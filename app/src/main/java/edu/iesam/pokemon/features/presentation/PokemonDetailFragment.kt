@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import edu.iesam.pokemon.app.domain.ErrorApp
+import edu.iesam.pokemon.app.extensions.loadUrl
 import edu.iesam.pokemon.databinding.FragmentPokemonDetailBinding
 import edu.iesam.pokemon.features.domain.Pokemon
 
@@ -64,6 +65,8 @@ class PokemonDetailFragment: Fragment() {
 
     fun bindData(pokemon: Pokemon) {
         binding.apply {
+            pokemonImage.loadUrl(pokemon.url)
+            pokemonId.text = pokemon.id
             name.text = pokemon.name
             height.text = pokemon.height.toString()
             weight.text = pokemon.weight.toString()
